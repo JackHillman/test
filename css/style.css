@@ -62,3 +62,43 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+/* line 4, ../scss/style.scss */
+button {
+  margin-left: 400px;
+}
+
+/* line 7, ../scss/style.scss */
+.hidden {
+  line-height: 100vh;
+  text-align: center;
+  font-size: 6em;
+  z-index: -1;
+  opacity: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: black;
+  color: #AAA;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* line 24, ../scss/style.scss */
+.hidden2 {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  position: fixed;
+  top: -100px;
+  -moz-transition: top 0.3s linear 0.2s, height 0.2s ease-out 0.3s, width 0.3s ease-in-out 0.5s;
+  -o-transition: top 0.3s linear 0.2s, height 0.2s ease-out 0.3s, width 0.3s ease-in-out 0.5s;
+  -webkit-transition: top 0.3s linear, height 0.2s ease-out, width 0.3s ease-in-out;
+  -webkit-transition-delay: 0.2s, 0.3s, 0.5s;
+  transition: top 0.3s linear 0.2s, height 0.2s ease-out 0.3s, width 0.3s ease-in-out 0.5s;
+}
